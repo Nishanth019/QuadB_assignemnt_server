@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://admin:admin@cluster0.9bl0evn.mongodb.net/?retryW
 })
 
 app.use(cors({
-    origin: 'process.env.FRONTEND_URL',
+    origin: process.env.FRONTEND_URL,
     method: ['POST','GET','PUT','DELETE'],
     credentials: true
 }))
